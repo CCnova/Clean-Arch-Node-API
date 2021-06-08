@@ -4,10 +4,11 @@
   "description": "Node Api to practice clean archtecture concepts",
   "main": "index.js",
   "scripts": {
+    "start": "tsc && node dist/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
-    "*.js": [
+    "*.ts": [
       "standard"
     ]
   },
