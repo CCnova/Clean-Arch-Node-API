@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/CCnova/Clean-Arch-Node-API/issues"
   },
-  "homepage": "https://github.com/CCnova/Clean-Arch-Node-API#readme"
+  "homepage": "https://github.com/CCnova/Clean-Arch-Node-API#readme",
+  "devDependencies": {
+    "standard": "^16.0.3"
+  }
 }
