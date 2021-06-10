@@ -13,7 +13,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": ["eslint", "npm test", "jest --passWithNoTests --findRelatedTests --silent --noStackTrace"]
+    "**/*.{js,jsx,ts,tsx}": ["eslint", "npm test"]
   },
   "repository": {
     "type": "git",
