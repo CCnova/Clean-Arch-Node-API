@@ -14,7 +14,10 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": ["eslint", "npm test"]
+    "**/*.{js,jsx,ts,tsx}": [
+      "eslint",
+      "npm test"
+    ]
   },
   "repository": {
     "type": "git",
@@ -45,6 +48,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.12.13"
+    "mongoose": "^5.12.13",
+    "validator": "^13.6.0"
   }
 }
