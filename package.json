@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "tsc && node dist/app.js",
-    "test": "npx jest --passWithNoTests --findRelatedTests --silent --noStackTrace",
-    "test:watch": "npx jest --watchAll --silent --noStackTrace",
-    "test:ci": "jest --coverage --noStackTrace --silent",
+    "test": "jest --passWithNoTests --findRelatedTests --silent --noStackTrace",
+    "test:watch": "jest --watchAll --silent --noStackTrace",
+    "test:ci": "jest --coverage --silent --noStackTrace",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "npm run lint -- --fix",
     "prepare": "husky install"
