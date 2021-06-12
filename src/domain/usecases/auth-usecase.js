@@ -11,11 +11,13 @@ module.exports = class AuthUseCase {
         if (!email) throw new MissingParamError('email');
         if (!password) throw new MissingParamError('password');
         const user = await this.loadUserByEmailRepository.load(email);
-        if (!user) return null;
-        const isPasswordValid = await this.encrypter.compare(password, user.password);
-        if (!isPasswordValid) return null;
-        const accessToken = await this.tokenGenerator.generate(user.id);
+        const isPasswordValid = user && await this.encrypter.compare(password, user.password);
+        if (isPasswordValid) {
+            const accessToken = await this.tokenGenerator.generate(user.id);
+            
+            return accessToken;
+        }
 
-        return accessToken;
+        return null;
     }
 }
