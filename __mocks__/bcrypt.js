@@ -1,8 +1,8 @@
 module.exports = {
     isValid: true,
-    async compare (value, hash) {
+    async compare (value, hashedValue) {
         this.value = value;
-        this.hash = hash;
+        this.hashedValue = hashedValue;
         return this.isValid;
     }
 };
