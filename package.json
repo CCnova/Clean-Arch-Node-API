@@ -2,9 +2,9 @@
   "name": "clean-arch-node-api",
   "version": "1.0.0",
   "description": "Node Api to practice clean archtecture concepts",
-  "main": "index.js",
+  "main": "src/main/index.js",
   "scripts": {
-    "start": "tsc && node dist/app.js",
+    "start": "node src/main/index.js",
     "test": "jest --passWithNoTests --findRelatedTests --noStackTrace",
     "test:unit": "jest --watchAll --silent --noStackTrace -c jest-unit-config.js",
     "test:integration": "jest --watchAll --silent --noStackTrace -c jest-integration-config.js",
