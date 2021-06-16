@@ -17,11 +17,9 @@ module.exports = {
     this.db = null;
   },
 
-  async getDb() {
-    if (!this.connection || !this.connection.isConnected()) {
-        await this.connect(this.uri, this.dbName);
-    }
+  async getCollection (name) {
+    if (!this.connection || !this.connection.isConnected()) await this.connect(this.uri, this.dbName);
 
-    return this.db;
+    return this.db.collection(name);
   },
 };
